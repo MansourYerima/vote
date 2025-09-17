@@ -25,14 +25,11 @@ Route::resource('candidates', CandidateController::class);
 Route::middleware(['auth'])->group(function () {
     Route::resource('roles', RoleController::class);
     Route::post('/vote', [VoteController::class, 'store'])->name('vote.store');
-    Route::get('/users', [UserController::class,"index"])->name('users');
-    Route::get('/liste_vote',[DashbordController::class,"liste_vote"])->name("liste_vote");
+    Route::get('/users', [UserController::class, "index"])->name('users');
+    Route::get('/liste_vote', [DashbordController::class, "liste_vote"])->name("liste_vote");
     Route::get('/dashbord', function () {
         $totalVotes = Vote::count();
         $utilisateursInscrit = User::count();
-        return view("dashbase",compact("totalVotes","utilisateursInscrit"));
+        return view("dashbase", compact("totalVotes", "utilisateursInscrit"));
     })->name("dashboard");
 });
-
-
-

@@ -19,7 +19,7 @@ class CandidateController extends Controller
         $candidates = Candidate::all();
         $totalVotes = Vote::count();
         $utilisateursInscrit = User::count();
-        return view('candidates.index', compact('candidates',"totalVotes","utilisateursInscrit"));
+        return view('candidates.index', compact('candidates', "totalVotes", "utilisateursInscrit"));
     }
 
     /**
@@ -30,7 +30,7 @@ class CandidateController extends Controller
         $totalVotes = Vote::count();
         $utilisateursInscrit = User::count();
         $postes = Poste::all();
-        return view('candidates.create',compact('totalVotes','utilisateursInscrit',"postes"));
+        return view('candidates.create', compact('totalVotes', 'utilisateursInscrit', "postes"));
     }
 
     /**

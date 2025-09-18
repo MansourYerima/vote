@@ -18,7 +18,8 @@ class PostesTableSeeder extends Seeder
             'Secrétaire',
             'Trésorier',
             'Chargé des Activités',
-            'Chargé de Communication',
+            'Chargé de la Communication',
+            'Chargés du ménage',
         ];
 
         foreach ($postes as $poste) {

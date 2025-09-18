@@ -25,7 +25,7 @@
             <!-- <img src="images/signup-bg.jpg" alt=""> -->
             <div class="container">
                 <div class="signup-content">
-                    <form action="{{route('register')}}" method="POST" id="signup-form" class="signup-form">
+                    <form action="{{route('users.store')}}" method="POST" id="signup-form" class="signup-form">
                        @csrf
                         <h2 class="form-title">créer votre compte </h2>
                         <div class="form-group">

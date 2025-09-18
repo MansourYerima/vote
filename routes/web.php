@@ -26,6 +26,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('roles', RoleController::class);
     Route::post('/vote', [VoteController::class, 'store'])->name('vote.store');
     Route::get('/users', [UserController::class, "index"])->name('users');
+    Route::post('/users/regiter', [UserController::class, "store"])->name('users.store');
     Route::get('/liste_vote', [DashbordController::class, "liste_vote"])->name("liste_vote");
     Route::get('/dashbord', function () {
         $totalVotes = Vote::count();

@@ -785,10 +785,6 @@
                     style="height: 100vh; object-fit: cover; opacity: 0.6;">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="{{ asset('assets/img3.jpeg') }}" alt="image 3"
-                    style="height: 100vh; object-fit: cover; opacity: 0.6;">
-            </div>
-            <div class="carousel-item">
                 <img class="d-block w-100" src="{{ asset('assets/img4.jpeg') }}" alt="image 3"
                     style="height: 100vh; object-fit: cover; opacity: 0.6;">
             </div>
@@ -801,15 +797,7 @@
                     style="height: 100vh; object-fit: cover; opacity: 0.6;">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="{{ asset('assets/img7.jpeg') }}" alt="image 3"
-                    style="height: 100vh; object-fit: cover; opacity: 0.6;">
-            </div>
-            <div class="carousel-item">
                 <img class="d-block w-100" src="{{ asset('assets/img8.jpeg') }}" alt="image 3"
-                    style="height: 100vh; object-fit: cover; opacity: 0.6;">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="{{ asset('assets/img9.jpeg') }}" alt="image 3"
                     style="height: 100vh; object-fit: cover; opacity: 0.6;">
             </div>
             <div class="carousel-item">
